@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace ExceptionHandling
 {
-    public class SolutionLoggingExceptions
+    public class Solution34LoggingExceptions
     {
         public async Task MainMethod()
         {

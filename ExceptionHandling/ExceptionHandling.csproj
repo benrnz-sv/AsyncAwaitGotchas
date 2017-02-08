@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Example1CatchingExceptions.cs" />
-    <Compile Include="SolutionLoggingExceptions.cs" />
+    <Compile Include="Solution34LoggingExceptions.cs" />
     <Compile Include="Example4LoggingExceptions.cs" />
-    <Compile Include="SolutionCatchingExceptions.cs" />
+    <Compile Include="Solution12CatchingExceptions.cs" />
     <Compile Include="Example3LoggingExceptions.cs" />
     <Compile Include="Example2CatchingExceptions.cs" />
     <Compile Include="Program.cs" />

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace ExceptionHandling
 {
-    public class SolutionCatchingExceptions
+    public class Solution12CatchingExceptions
     {
         public async Task MainMethod()
         {

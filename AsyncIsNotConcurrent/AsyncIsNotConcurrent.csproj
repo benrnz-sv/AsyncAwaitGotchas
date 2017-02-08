@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Example6CallingAsyncMethodsWithoutAwaiting.cs" />
+    <Compile Include="Solution5InvokeThenWait.cs" />
     <Compile Include="Example5InvokeThenWait.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
