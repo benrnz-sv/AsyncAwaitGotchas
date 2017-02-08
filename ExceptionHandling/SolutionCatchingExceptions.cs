@@ -5,11 +5,11 @@ namespace ExceptionHandling
 {
     public class SolutionCatchingExceptions
     {
-        public async Task CallThrowExceptionAsync()
+        public async Task MainMethod()
         {
             try
             {
-                await ThrowExceptionAsync();
+                await DoWork();
             }
             catch (Exception)
             {
@@ -17,7 +17,7 @@ namespace ExceptionHandling
             }
         }
 
-        private async Task ThrowExceptionAsync()
+        private async Task DoWork()
         {
             throw new NotSupportedException();
         }

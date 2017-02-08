@@ -5,13 +5,13 @@ namespace ExceptionHandling
 {
     public class Example3LoggingExceptions
     {
-        public async Task CallThrowExceptionAsync()
+        public async Task MainMethod()
         {
             AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledException;
 
             try
             {
-                ThrowExceptionAsync();
+                DoWork();
             }
             catch (InvalidOperationException ex)
             {
@@ -20,7 +20,7 @@ namespace ExceptionHandling
             }
         }
 
-        private async void ThrowExceptionAsync()
+        private async void DoWork()
         {
             throw new InvalidOperationException("Critical information here");
         }

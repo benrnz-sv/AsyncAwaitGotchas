@@ -4,11 +4,11 @@ namespace ExceptionHandling
 {
     public class Example1CatchingExceptions
     {
-        public void CallThrowExceptionAsync()
+        public void MainMethod()
         {
             try
             {
-                ThrowExceptionAsync();
+                DoWork();
             }
             catch (Exception)
             {
@@ -16,7 +16,7 @@ namespace ExceptionHandling
             }
         }
 
-        private async void ThrowExceptionAsync()
+        private async void DoWork()
         {
             throw new NotSupportedException();
         }

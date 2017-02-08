@@ -6,14 +6,14 @@ namespace ExceptionHandling
 {
     public class SolutionLoggingExceptions
     {
-        public async Task CallThrowExceptionAsync()
+        public async Task MainMethod()
         {
             AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledException;
 
             try
             {
                 // Best way
-                await ThrowExceptionAsync();
+                await DoWork();
             }
             catch (InvalidOperationException)
             {
@@ -21,7 +21,7 @@ namespace ExceptionHandling
             }
         }
 
-        private async Task ThrowExceptionAsync()
+        private async Task DoWork()
         {
             throw new InvalidOperationException("Critical information here");
         }

@@ -7,13 +7,13 @@ namespace ExceptionHandling
     {
         public static void Main(string[] args)
         {
-                // new Example1CatchingExceptions().CallThrowExceptionAsync();
-                // new Example2CatchingExceptions().CallThrowExceptionAsync();
-                // new SolutionCatchingExceptions().CallThrowExceptionAsync().Wait();
+                // new Example1CatchingExceptions().MainMethod();
+                // new Example2CatchingExceptions().MainMethod();
+                // new SolutionCatchingExceptions().MainMethod().Wait();
 
-                // new Example3LoggingExceptions().CallThrowExceptionAsync().Wait();
-                // new Example4LoggingExceptions().CallThrowExceptionAsync().Wait();
-                new SolutionLoggingExceptions().CallThrowExceptionAsync().Wait();
+                // new Example3LoggingExceptions().MainMethod().Wait();
+                // new Example4LoggingExceptions().MainMethod().Wait();
+                new SolutionLoggingExceptions().MainMethod().Wait();
 
                 Console.WriteLine("Press enter to exit.");
                 Console.ReadLine(); // Unhandled exceptions above may mean ReadLine is unavailable.
