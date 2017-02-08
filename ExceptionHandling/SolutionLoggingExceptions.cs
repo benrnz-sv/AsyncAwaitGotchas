@@ -31,8 +31,12 @@ namespace ExceptionHandling
             Console.WriteLine("Unhandled Exception Handler");
 
             // Or you can inspect the actual exception(s) type here
-            var exception = unhandledExceptionEventArgs.ExceptionObject as AggregateException;
-            if (exception != null && exception.InnerExceptions.OfType<InvalidOperationException>().Any())
+            var invalidOperationException = unhandledExceptionEventArgs.ExceptionObject;
+            var aggregateException = unhandledExceptionEventArgs.ExceptionObject as AggregateException;
+
+            // Check for both possible exception types.
+            if (invalidOperationException != null 
+                || aggregateException != null && aggregateException.InnerExceptions.OfType<InvalidOperationException>().Any())
             {
                 Console.WriteLine("Special handling for this exception type");
                 return;
