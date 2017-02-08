@@ -16,9 +16,9 @@ namespace AsyncIsNotConcurrent
 
         private async Task WorkThenWait()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(1000); // Busy doing some synchronous work...
             Console.WriteLine("doing work...");
-            await Task.Delay(1000);
+            await Task.Delay(1000); // Busy doing some asynchronous work...
         }
     }
 }
