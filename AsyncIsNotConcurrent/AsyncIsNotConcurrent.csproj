@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Example6CallingAsyncMethodsWithoutAwaiting.cs" />
+    <Compile Include="Example7AdvancedScenario.cs" />
     <Compile Include="Solution5InvokeThenWait.cs" />
     <Compile Include="Example5InvokeThenWait.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solution7AdvancedScenario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
