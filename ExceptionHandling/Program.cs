@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 
 namespace ExceptionHandling
 {
@@ -7,16 +6,18 @@ namespace ExceptionHandling
     {
         public static void Main(string[] args)
         {
-                // new Example1CatchingExceptions().MainMethod();
-                // new Example2CatchingExceptions().MainMethod();
-                // new Solution12CatchingExceptions().MainMethod().Wait();
+            Console.WriteLine("Exception Handling.");
 
-                // new Example3LoggingExceptions().MainMethod().Wait();
-                // new Example4LoggingExceptions().MainMethod().Wait();
-                new Solution34LoggingExceptions().MainMethod().Wait();
+            // new Example1CatchingExceptions().MainMethod();
+            // new Example2CatchingExceptions().MainMethod();
+            // new Solution12CatchingExceptions().MainMethod().Wait();
 
-                Console.WriteLine("Press enter to exit.");
-                Console.ReadLine(); // Unhandled exceptions above may mean ReadLine is unavailable.
+            // new Example3LoggingExceptions().MainMethod().Wait();
+            // new Example4LoggingExceptions().MainMethod().Wait();
+            new Solution34LoggingExceptions().MainMethod().Wait();
+
+            Console.WriteLine("Press enter to exit.");
+            Console.ReadLine(); // Unhandled exceptions above may mean ReadLine is unavailable.
         }
     }
 }

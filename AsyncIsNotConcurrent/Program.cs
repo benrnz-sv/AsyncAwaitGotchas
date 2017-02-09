@@ -6,6 +6,8 @@ namespace AsyncIsNotConcurrent
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Async is not concurrent.");
+
             //new Example5InvokeThenWait().MainMethod();
             //new Solution5InvokeThenWait().MainMethod().Wait();
 
