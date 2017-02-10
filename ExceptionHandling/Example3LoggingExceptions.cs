@@ -15,6 +15,7 @@ namespace ExceptionHandling
             }
             catch (InvalidOperationException ex)
             {
+                // Handle exception
                 Console.WriteLine("Special handling for this exception type");
                 Console.WriteLine(ex);
             }
