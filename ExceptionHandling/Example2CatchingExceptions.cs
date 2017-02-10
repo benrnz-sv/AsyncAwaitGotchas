@@ -13,6 +13,7 @@ namespace ExceptionHandling
             }
             catch (Exception)
             {
+                // Handle Exception
                 Console.WriteLine("Failed.");
             }
         }
